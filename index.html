@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/favicon-32x32.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <!-- In the <head> -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <header class="container header flex justify-between items-center">
+        <a
+        class="header__logo"
+        href="#"
+        ><img
+            src="assets/logo.svg"
+            alt="Portfolio"
+        /></a>
+        <button
+            class="button"
+        >
+            Free Consultation
+        </button>
+    </header>
+
+    <main class="container portfolio">
+        <section class="portfolio__intro text-center">
+            <h1 class="portfolio__intro-title">Design solutions made easy</h1>
+            <p class="portfolio__intro-description">
+                With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs. 
+            </p>
+        </section>
+
+        <section class="portfolio__skills">
+            <ul
+                class="portfolio__skills-grid"
+                role="list"
+            >
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--graphic-design"
+                >
+                    <a
+                        class="card portfolio__skills-grid-text
+                                portfolio__skills-grid-text--graphic-design"
+                        href="#"
+                    >
+                        Graphic Design</a
+                    >
+                </li>
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--ui-ux"
+                >
+                <a
+                    class="card portfolio__skills-grid-text
+                            portfolio__skills-grid-text--ui-ux"
+                    href="#"
+                >
+                    UI/UX</a
+                >
+                </li>
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--apps"
+                >
+                <a
+                    class="card portfolio__skills-grid-text
+                            portfolio__skills-grid-text--apps"
+                    href="#"
+                >
+                    Apps</a
+                >
+                </li>
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--illustrations"
+                >
+                <a
+                    class="card portfolio__skills-grid-text
+                            portfolio__skills-grid-text--illustrations"
+                    href="#"
+                >
+                    Illustrations</a
+                >
+                </li>
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--photography"
+                >
+                <a
+                    class="card portfolio__skills-grid-text
+                            portfolio__skills-grid-text--photography"
+                    href="#"
+                >
+                    Photography</a
+                >
+                </li>
+                <li
+                class="portfolio__skills-grid-item 
+                        portfolio__skills-grid-item--motion-graphics"
+                >
+                <a
+                    class="card portfolio__skills-grid-text
+                            portfolio__skills-grid-text--motion-graphics"
+                    href="#"
+                >
+                    Motion Graphics</a
+                >
+                </li>
+            </ul>
+        </section>
+        
+        <section class="portfolio__about-me">
+            <div class="portfolio__about-me-image">
+                <img
+                    src="assets/image-amy.webp"
+                    alt=""
+                />
+            </div>
+            <div class="portfolio__about-me-intro">
+                <h2 class="portfolio__about-me-title">
+                    I’m Amy, and I’d love to work on your next project
+                </h2>
+                <p class="portfolio__about-me-description">
+                    I love working with others to create beautiful design solutions.
+                    I’ve designed everything from brand illustrations to complete
+                    mobile apps. I’m also handy with a camera!
+                </p>
+                <button
+                    class="button"
+                    data-type="alternative"
+                >
+                    Free Consultation
+                </button>
+            </div>
+        </section>
+        
+        <section class="portfolio__carousel">
+            <h2 class="portfolio__carousel-title">My Work</h2>
+            <!-- Slider main container -->
+
+            <ul class="portfolio__carousel-images" role="list">
+                <li>
+                <img
+                    src="./assets/image-slide-1.jpg"
+                    alt=""
+                />
+                </li>
+                <li>
+                <img
+                    src="./assets/image-slide-2.jpg"
+                    alt=""
+                />
+                </li>
+                <li>
+                <img
+                    src="./assets/image-slide-3.jpg"
+                    alt=""
+                />
+                </li>
+                <li>
+                <img
+                    src="./assets/image-slide-4.jpg"
+                    alt=""
+                />
+                </li>
+                <li>
+                <img
+                    src="./assets/image-slide-5.jpg"
+                    alt=""
+                />
+                </li>
+            </ul>
+
+            <div class="flex justify-between gap-4">
+                <button class="button button--previous">
+                    <image src="./assets/icon-arrow-left.svg"></image>
+                </button>
+                <button class="button button--next">
+                    <image src="./assets/icon-arrow-right.svg"></image>
+                </button>
+            </div>
+        </section>
+        
+        <section class="card portfolio__booking text-center">
+            <h2 class="portfolio__booking-title">
+                Book a call with me
+            </h2>
+            <p class="portfolio__booking-description">
+                I’d love to have a chat to see how I can help you. The best first
+                step is for us to discuss your project during a free consultation.
+                Then we can move forward from there.
+            </p>
+            <button
+                class="button"
+                data-type="alternative"
+            >
+                Free Consultation
+            </button>
+        </section>
+    </main>
+
+    <footer class="container footer flex justify-between items-center">
+        <a
+        class="footer__logo"
+        href="#"
+        ><img
+            src="assets/logo.svg"
+            alt="Portfolio"
+        /></a>
+        <button
+            class="button"
+        >
+            Free Consultation
+        </button>
+    </footer>
+  </body>
+</html>
