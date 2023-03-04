@@ -167,6 +167,22 @@ ol[role=list] {
   border-radius: var(--size-200);
 }
 
+.title {
+  font-weight: var(--fw-bold);
+}
+.title--small {
+  font-size: var(--fs-small-heading);
+  line-height: var(--fs-600);
+}
+.title--medium {
+  font-size: var(--fs-medium-heading);
+  line-height: var(--fs-800);
+}
+.title--large {
+  font-size: var(--fs-large-heading);
+  line-height: var(--fs-900);
+}
+
 /* general styling */
 body {
   -webkit-font-smoothing: antialiased;
@@ -191,16 +207,11 @@ body {
   flex-direction: column;
   padding-block: var(--size-900);
 }
-.portfolio__intro-title {
-  font-size: var(--fs-large-heading);
-  font-weight: var(--fw-bold);
-  line-height: var(--fs-900);
-}
 .portfolio__skills-grid {
   display: grid;
   gap: var(--size-500);
   grid-auto-rows: auto;
-  grid-template-columns: minmax(1em, 1fr) minmax(1em, 1fr);
+  grid-template-columns: minmax(1rem, 1fr) minmax(1rem, 1fr);
 }
 .portfolio__skills-grid-item {
   grid-column: 1/-1;
@@ -227,38 +238,38 @@ body {
 }
 .portfolio__skills-grid-text--graphic-design {
   background-image: url("/assets/pattern-graphic-design.svg");
-  min-width: 1em;
+  min-width: 1rem;
   min-height: 24.25rem;
   background-color: var(--clr-primary-900-hover);
 }
 .portfolio__skills-grid-text--ui-ux {
   background-image: url("/assets/pattern-ui-ux.svg");
-  min-width: 1em;
+  min-width: 1rem;
   min-height: 11.375rem;
   background-color: var(--clr-accent-400-hover);
 }
 .portfolio__skills-grid-text--apps {
   background-image: url("/assets/pattern-apps.svg");
-  min-width: 1em;
+  min-width: 1rem;
   min-height: 11.375rem;
   background-color: var(--clr-accent-100);
 }
 .portfolio__skills-grid-text--illustrations {
   background-image: url("/assets/pattern-illustrations.svg");
-  min-width: 1em;
+  min-width: 1rem;
   min-height: 11.375rem;
   background-color: var(--clr-accent-400);
 }
 .portfolio__skills-grid-text--photography {
   background-image: url("/assets/pattern-photography.svg");
-  min-width: 1em;
+  min-width: 1rem;
   min-height: 11.375rem;
   background-color: var(--clr-accent-200);
 }
 .portfolio__skills-grid-text--motion-graphics {
   background-image: url("/assets/pattern-motion-graphics.svg");
-  min-width: 1em;
-  min-height: 182px;
+  min-width: 1rem;
+  min-height: 11.375rem;
   background-color: var(--clr-accent-800);
 }
 .portfolio__about-me {
@@ -268,10 +279,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-.portfolio__about-me-title {
-  font-size: var(--fs-medium-heading);
-  font-weight: var(--fw-bold);
 }
 .portfolio__carousel-images {
   display: flex;
@@ -289,9 +296,6 @@ body {
   color: var(--clr-neutral-100);
   padding: var(--size-700) var(--size-500);
 }
-.portfolio__booking-title {
-  font-size: var(--fs-medium-heading);
-}
 .footer {
   padding: var(--size-400) 0;
 }
@@ -307,10 +311,6 @@ body {
   .portfolio__intro {
     padding-block: 0;
     padding: var(--size-400) var(--size-500);
-  }
-  .portfolio__intro-title {
-    font-weight: var(--fw-bold);
-    line-height: var(--fs-800);
   }
   .portfolio__intro-description {
     padding-top: var(--size-400);
@@ -334,11 +334,6 @@ body {
     align-items: center;
     gap: var(--size-500);
   }
-  .portfolio__about-me-intro-title {
-    font-size: var(--fs-large-heading);
-    font-weight: var(--fw-bold);
-    line-height: var(--fs-900);
-  }
   .portfolio__carousel {
     padding-block: 6.25rem;
     display: flex;
@@ -359,7 +354,7 @@ body {
     padding-block: var(--size-900);
   }
   .portfolio__skills-grid {
-    grid-template-columns: minmax(1em, 2fr) minmax(1em, 1fr) minmax(1em, 1fr);
+    grid-template-columns: minmax(1rem, 2fr) minmax(1rem, 1fr) minmax(1rem, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
   .portfolio__skills-grid-item--graphic-design {
@@ -392,7 +387,7 @@ body {
     padding-block: var(--size-900);
   }
   .portfolio__skills-grid {
-    grid-template-columns: minmax(1em, 2fr) minmax(1em, 1fr) minmax(1em, 1fr) minmax(1em, 2fr);
+    grid-template-columns: minmax(1rem, 2fr) minmax(1rem, 1fr) minmax(1rem, 1fr) minmax(1rem, 2fr);
     grid-template-rows: repeat(2, 1fr);
   }
   .portfolio__skills-grid-item--illustrations {
